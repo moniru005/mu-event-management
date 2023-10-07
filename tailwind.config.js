@@ -8,7 +8,7 @@ export default {
     extend: {
       fontFamily: {
         workSans: 'Work Sans, sans-serif',
-        caveat: 'Work Sans, sans-serif',
+        caveat: 'Caveat, cursive',
       },
       backgroundImage: {
         'formBg': "url('https://i.ibb.co/6nMd0Tj/form-bg.jpg')",

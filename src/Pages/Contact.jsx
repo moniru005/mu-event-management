@@ -3,7 +3,9 @@ import Navbar from "../components/Header/Navbar";
 const Contact = () => {
     return (
         <div>
-            <Navbar></Navbar>
+            <div className="lg:px-12">
+                <Navbar></Navbar>
+            </div>
         </div>
     );
 };

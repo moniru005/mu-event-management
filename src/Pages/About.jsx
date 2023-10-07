@@ -3,7 +3,9 @@ import Navbar from "../components/Header/Navbar";
 const About = () => {
     return (
         <div>
-            <Navbar></Navbar>
+            <div className="lg:px-12">
+                <Navbar></Navbar>
+            </div>
         </div>
     );
 };

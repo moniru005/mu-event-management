@@ -2,12 +2,11 @@
 const Login = () => {
     return (
         <>
-        <div className="hero min-h-screen   lg:mx-auto lg:mt-6">
+            <div className="hero lg:mx-auto lg:mt-6 font-workSans">
                 <div className="hero-content w-full flex-col  ">
-
                     <div className="flex-shrink-0 w-full bg-formBg rounded-md">
                         <div className=" pt-6 text-center">
-                            <h1 className="text-3xl font-bold text-white">Please Login</h1>
+                            <h1 className="text-3xl font-bold text-white ">Please Login</h1>
                         </div>
                         <form className="card-body ">
                             <div className="form-control">
@@ -30,7 +29,6 @@ const Login = () => {
                             </div>
                         </form>
                     </div>
-                    
                 </div>
             </div>
         </>

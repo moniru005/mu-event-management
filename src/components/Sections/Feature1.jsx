@@ -12,7 +12,7 @@ const Feature1 = () => {
             </div>
             <div className="lg:flex hidden w-2 border-l-yellow-500 lg:h-60 border-l-4"></div>
 
-            <div className="flex flex-1 lg:items-center justify-center ">
+            <div className="flex flex-1 lg:items-center justify-center font-workSans">
                 <div className="px-4 ">
                     <div className="lg:mb-6 space-y-3 lg:text-left text-center">
                         <div className="text-6xl font-bold font-workSans space-y-2 lg:mb-10 mb-6">
