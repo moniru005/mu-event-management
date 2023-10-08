@@ -1,8 +1,48 @@
+import { useContext, useState } from "react";
 import SocialLogin from "./SocialLogin";
+import { AuthContext } from "./AuthProvider";
+import Swal from 'sweetalert2';
+import { useLocation, useNavigate } from "react-router-dom";
+
 
 const Login = () => {
 
-    
+    const navigate = useNavigate();
+    const location = useLocation();
+
+    const { signIn } = useContext(AuthContext);
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+
+    const handleSignIn = (e) => {
+        
+        e.preventDefault();
+        signIn(email, password)
+            .then(result => {
+                console.log(result.user)
+                if(result.user.email || result.user.email){
+                    Swal.fire({
+                        title: 'You are Logged in!',
+                        text: '',
+                        icon: 'success',
+                    })
+                }
+                              
+                  navigate(location?.state ? location.state : '/');
+
+            })
+            .catch(err => {
+                Swal.fire({
+                    title: 'Email or password not matched!', err,   
+                    text: 'Please check and try again!',
+                    icon: 'warning',
+                }) 
+            })
+    }
+
+
+
+
     return (
         <>
             <div className="hero lg:mx-auto lg:mt-6 font-workSans">
@@ -16,19 +56,19 @@ const Login = () => {
                                 <label className="label">
                                     <span className="label-text text-white">Email</span>
                                 </label>
-                                <input type="email" placeholder="Email" className="input input-bordered focus:outline-none" required />
+                                <input onChange={(e) => setEmail(e.target.value)} type="email" placeholder="Email" className="input input-bordered focus:outline-none" required />
                             </div>
                             <div className="form-control">
                                 <label className="label">
                                     <span className="label-text text-white">Password</span>
                                 </label>
-                                <input type="password" placeholder="Password" className="input input-bordered focus:outline-none" required />
+                                <input onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password" className="input input-bordered focus:outline-none" required />
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover text-white">Forgot password?</a>
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn bg-slate-900 text-white hover:text-black hover:bg-slate-400 border-slate-800">Login</button>
+                                <button onClick={handleSignIn} className="btn bg-slate-900 text-white hover:text-black hover:bg-slate-400 border-slate-800">Login</button>
                             </div>
                             <SocialLogin></SocialLogin>
                         </form>

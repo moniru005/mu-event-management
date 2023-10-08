@@ -1,15 +1,40 @@
-import { Link, NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink, useNavigate } from "react-router-dom";
+import { AuthContext } from "../../Auth/AuthProvider";
+import Swal from 'sweetalert2';
 
 
 const Navbar = () => {
+    const { user, userSignOut } = useContext(AuthContext);
+    // console.log(user)
+
+    const navigate = useNavigate();
+
+    const handleLogOut = () => {
+        userSignOut()
+            .then(() => {
+                Swal.fire(
+                    'You are Logged Out.!',
+                    '',
+                    'success'
+                )
+                navigate('/login')
+            })
+            .catch(error => {
+                console.log(error)
+            })
+    }
+
+
+
 
     const navLinks = <>
         <div className="flex lg:flex-row md:flex-col flex-col gap-2 font-semibold font-workSans">
-        <li> <NavLink to="/">Home</NavLink> </li>
-        <li> <NavLink to="/about">About</NavLink> </li>
-        <li> <NavLink to="/contact">Contact</NavLink> </li>
-        <li> <NavLink to="/login">Login</NavLink> </li>
-        <li> <NavLink to="/register">Register</NavLink> </li>
+            <li> <NavLink to="/">Home</NavLink> </li>
+            <li> <NavLink to="/about">About</NavLink> </li>
+            <li> <NavLink to="/contact">Contact</NavLink> </li>
+            <li> <NavLink to="/login">Login</NavLink> </li>
+            <li> <NavLink to="/register">Register</NavLink> </li>
         </div>
     </>
     return (
@@ -34,9 +59,20 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <Link to="/login">
-                    <button className="btn bg-slate-800 text-white hover:bg-slate-700 font-workSans">Login</button>
-                </Link>
+                <div className="flex items-center gap-2">
+                    <p>{user?.email}</p>
+
+                    {
+                        user ?
+                            <button onClick={handleLogOut} className="btn bg-slate-800 text-white hover:bg-slate-700 font-workSans">Logout</button>
+                            :
+                            <Link to="/login">
+                                <button className="btn bg-slate-800 text-white hover:bg-slate-700 font-workSans">Login</button>
+                            </Link>
+                    }
+                </div>
+
+
             </div>
         </div>
     );

@@ -2,33 +2,44 @@ import { useContext, useState } from "react";
 import SocialLogin from "./SocialLogin";
 import { AuthContext } from "./AuthProvider";
 import Swal from 'sweetalert2';
+import { useNavigate } from "react-router-dom";
+
 
 
 
 const Register = () => {
 
     const { createUser } = useContext(AuthContext);
-
-
-
+    
+    const navigate = useNavigate();
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
-    const [isError, setIsError] = useState("");
-    const [success, setSuccess] = useState("");
-
-
-
+    console.log(name);
     const handleSignUp = (e) => {
 
         // setIsError('');
         // setSuccess('');
 
         e.preventDefault();
-        if (!/^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$/.test(password)) {
+        if (!/.{8,16}$/.test(password)) {
             Swal.fire({
                 title: 'Warning!',
-                text: 'Password should be 6 characters or use at least one Uppercase letter',
+                text: 'The Password should be 6 characters',
+                icon: 'warning',
+            }) 
+        }
+        else if (!/^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])/.test(password)){
+            Swal.fire({
+                title: 'Warning!',
+                text: 'The Password must contain at least one Uppercase and Lowercase letter',
+                icon: 'warning',
+            }) 
+        }
+        else if (!/(?=.*\W)(?!.* )/.test(password)){
+            Swal.fire({
+                title: 'Warning!',
+                text: 'The password must contain one special character',
                 icon: 'warning',
             }) 
         }
@@ -39,10 +50,12 @@ const Register = () => {
                     console.log(result.user);
                     e.target.reset();
                     Swal.fire({
-                        title: 'Created Success!',
-                        text: success,
+                        title: 'Success',
+                        text: 'User Successfully Created',
                         icon: 'success',
                     })
+
+                    navigate('/');
                    
 
                 })
