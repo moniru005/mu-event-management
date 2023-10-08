@@ -3,14 +3,14 @@ import Navbar from "../components/Header/Navbar";
 import Feature1 from "../components/Sections/Feature1";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Helmet } from "react-helmet-async";
+
 import Services from "../components/Services/Services";
 
 const Home = () => {
     AOS.init();
     return (
         <>
-            <Helmet><title>Home</title></Helmet>
+            
             <div className="mb-12">
                 <div className="lg:px-12">
                     <Navbar></Navbar>

@@ -6,7 +6,7 @@ const ServiceDetailsCard = ({ event }) => {
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 mt-6 mx-12 font-workSans">
                 <div className="col-span-3 border-2 ">
                     <img src="" alt="Image" />
-                    <h2 className="text-2xl font-semibold">{title} </h2>
+                    <h2 className="text-2xl font-semibold">Title</h2>
 
                     <div className="space-y-3">
                         <div>

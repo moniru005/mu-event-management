@@ -1,5 +1,8 @@
+import SocialLogin from "./SocialLogin";
 
 const Login = () => {
+
+    
     return (
         <>
             <div className="hero lg:mx-auto lg:mt-6 font-workSans">
@@ -27,6 +30,7 @@ const Login = () => {
                             <div className="form-control mt-6">
                                 <button className="btn bg-slate-900 text-white hover:text-black hover:bg-slate-400 border-slate-800">Login</button>
                             </div>
+                            <SocialLogin></SocialLogin>
                         </form>
                     </div>
                 </div>
