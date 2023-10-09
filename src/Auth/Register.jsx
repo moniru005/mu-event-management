@@ -81,14 +81,11 @@ const Register = () => {
 
             <div className="hero lg:mx-auto lg:mt-6 font-workSans">
                 <div className="hero-content w-full flex-col  ">
-
-
-
                     <div className="flex-shrink-0 w-full bg-formBg rounded-md">
                         <div className=" pt-6 text-center">
                             <h1 className="text-3xl font-bold text-white ">Registration Now</h1>
                         </div>
-                        <form onSubmit={handleSignUp} className="card-body ">
+                        <form onSubmit={handleSignUp} className="card-body pb-2 ">
                             <div className="form-control ">
                                 <label className="label">
                                     <span className="label-text text-white">Name</span>
@@ -117,11 +114,13 @@ const Register = () => {
                                     <a href="#" className="label-text-alt link link-hover text-white">Forgot password?</a>
                                 </label>
                             </div>
-                            <div className="form-control mt-6">
+                            <div className="form-control mt-4">
                                 <input className="btn bg-slate-900 text-white hover:text-black hover:bg-slate-400 border-slate-800" type="submit" value="Register" />
                             </div>
-                            <SocialLogin></SocialLogin>
                         </form>
+                        <div className="pb-4">
+                            <SocialLogin></SocialLogin>
+                        </div>
                     </div>
 
                 </div>

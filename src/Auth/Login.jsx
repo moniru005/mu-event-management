@@ -17,30 +17,30 @@ const Login = () => {
     const [showPassword, setShowPassword] = useState(false);
 
     const handleSignIn = (e) => {
-        
+
         e.preventDefault();
         signIn(email, password)
             .then(result => {
                 console.log(result.user)
-                if(result.user.email || result.user.email){
+                if (result.user.email || result.user.email) {
                     Swal.fire({
                         position: 'center',
                         icon: 'success',
                         title: 'Logged in Successfully',
                         showConfirmButton: false,
                         timer: 1500
-                      })
+                    })
                 }
-                              
-                  navigate(location?.state ? location.state : '/');
+
+                navigate(location?.state ? location.state : '/');
 
             })
             .catch(err => {
                 Swal.fire({
-                    title: 'Email or password not matched!', err,   
+                    title: 'Email or password not matched!', err,
                     text: 'Please check and try again!',
                     icon: 'warning',
-                }) 
+                })
             })
     }
 
@@ -67,12 +67,12 @@ const Login = () => {
                                     <span className="label-text text-white">Password</span>
                                 </label>
                                 <div className="relative form-control">
-                                <input onChange={(e) => setPassword(e.target.value)} type={showPassword ? 'text' : 'password'} placeholder="Password" className="input input-bordered focus:outline-none" required />
-                                <span
-                                            className="absolute top-4 right-2"
-                                            onClick={() => setShowPassword(!showPassword)}>
-                                            {!showPassword ? <FaRegEye /> : <FaRegEyeSlash/>}
-                                        </span>
+                                    <input onChange={(e) => setPassword(e.target.value)} type={showPassword ? 'text' : 'password'} placeholder="Password" className="input input-bordered focus:outline-none" required />
+                                    <span
+                                        className="absolute top-4 right-2"
+                                        onClick={() => setShowPassword(!showPassword)}>
+                                        {!showPassword ? <FaRegEye /> : <FaRegEyeSlash />}
+                                    </span>
                                 </div>
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover text-white">Forgot password?</a>
@@ -81,8 +81,10 @@ const Login = () => {
                             <div className="form-control mt-6">
                                 <button onClick={handleSignIn} className="btn bg-slate-900 text-white hover:text-black hover:bg-slate-400 border-slate-800">Login</button>
                             </div>
-                            <SocialLogin></SocialLogin>
                         </form>
+                        <div className="pb-4">
+                            <SocialLogin></SocialLogin>
+                        </div>
                     </div>
                 </div>
             </div>
