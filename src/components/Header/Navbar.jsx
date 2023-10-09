@@ -72,7 +72,7 @@ const Navbar = () => {
                         user ?
                             <div className="flex justify-center items-center">
                                 <button onClick={handleLogOut} className="btn bg-slate-800 text-white hover:bg-slate-700 font-workSans">Logout</button>
-                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                <label tabIndex={0} className="lg:flex hidden   btn btn-ghost btn-circle avatar">
                                     <div className="w-10 rounded-full">
                                         <img src={user?.photoURL} />
                                     </div>

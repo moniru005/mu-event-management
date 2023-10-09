@@ -3,6 +3,7 @@ import SocialLogin from "./SocialLogin";
 import { AuthContext } from "./AuthProvider";
 import Swal from 'sweetalert2';
 import { useNavigate } from "react-router-dom";
+import { FaRegEye, FaRegEyeSlash } from "react-icons/fa";
 
 
 
@@ -15,6 +16,7 @@ const Register = () => {
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [password, setPassword] = useState("");
+    const [showPassword, setShowPassword] = useState(false); 
     console.log(name);
     const handleSignUp = (e) => {
 
@@ -103,7 +105,14 @@ const Register = () => {
                                 <label className="label">
                                     <span className="label-text text-white">Password</span>
                                 </label>
-                                <input onChange={(e) => setPassword(e.target.value)} type="password" placeholder="Password" className="input input-bordered " required />
+                                <div className="relative form-control">
+                                <input onChange={(e) => setPassword(e.target.value)} type={showPassword ? 'text' : 'password'} placeholder="Password" className="input input-bordered " required />
+                                <span
+                                            className="absolute top-4 right-2"
+                                            onClick={() => setShowPassword(!showPassword)}>
+                                            {!showPassword ? <FaRegEye /> : <FaRegEyeSlash />}
+                                        </span>
+                                </div>
                                 <label className="label">
                                     <a href="#" className="label-text-alt link link-hover text-white">Forgot password?</a>
                                 </label>
