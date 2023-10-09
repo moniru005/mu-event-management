@@ -1,13 +1,14 @@
 import { Link } from "react-router-dom";
 import Register from "../Auth/Register";
 import Navbar from "../components/Header/Navbar";
+import { Helmet } from "react-helmet-async";
 
 
 const RegisterPage = () => {
 
     return (
         <>
-           
+           <Helmet> <title>Registration</title> </Helmet>
             <div className="lg:px-12">
                 <Navbar></Navbar>
                 <div className="lg:w-2/6 mx-auto">

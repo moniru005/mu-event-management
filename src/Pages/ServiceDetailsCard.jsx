@@ -1,6 +1,10 @@
+import PropTypes from 'prop-types';
 
 const ServiceDetailsCard = ({ event }) => {
-    const { id, title, image, event_information, event_about, event_content, start_date, end_date, short_details, venue, address, price, organizer_name, organizer_phone, organizer_email, organizer_website, event_speaker, event_speaker_photo } = event;
+    const { title, image, event_information, event_about, event_content, start_date, end_date, venue, address, price, organizer_name, organizer_phone, organizer_email, organizer_website, event_speaker, event_speaker_photo } = event;
+
+
+
     return (
         <div className="">
             <div className="grid grid-cols-1 lg:grid-cols-4 gap-6 my-6 pb-6 mx-12 font-workSans">
@@ -29,7 +33,7 @@ const ServiceDetailsCard = ({ event }) => {
 
                 {/* Right Side */}
                 <div className="px-4 mt-6 lg:mx-auto bg-white rounded-t-md">
-                    <h2 className="font-bold text-lg py-6 ">Event Details</h2>
+                    <h2 className="font-bold text-xl  py-6 ">Event Details</h2>
                     {/* Date & Venue */}
                     <div className="space-y-2 font-medium">
                         <div className="flex items-center justify-around gap-4 pb-4 ">
@@ -57,7 +61,7 @@ const ServiceDetailsCard = ({ event }) => {
                     <hr className="my-6 border-2" />
                     {/* Organizer */}
                     <div>
-                        <h2 className="font-bold text-lg pb-3 ">Organized by</h2>
+                        <h2 className="font-bold text-xl pb-3 ">Organized by</h2>
                         <div className="space-y-6 font-medium">
                             <div className="flex lg:flex-col lg:items-start justify-between items-center gap-2">
                                 <p >Organizer:</p>
@@ -99,3 +103,6 @@ const ServiceDetailsCard = ({ event }) => {
 };
 
 export default ServiceDetailsCard;
+ServiceDetailsCard.propTypes = {
+    event: PropTypes.node,
+}

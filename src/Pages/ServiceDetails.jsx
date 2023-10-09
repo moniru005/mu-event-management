@@ -11,11 +11,9 @@ const ServiceDetails = () => {
 
     const idInt = parseInt(id)
     const event = events?.find(event => event.id === idInt);
-    console.log(event);
+    // console.log(event);
 
-    
-
-    
+     
 
     return (
         <>

@@ -1,6 +1,8 @@
 import { useContext } from "react";
 import { AuthContext } from "../Auth/AuthProvider";
 import { Navigate, useLocation } from "react-router-dom";
+import PropTypes from 'prop-types';
+
 
 const PrivateRoutes = ({ children }) => {
 
@@ -9,7 +11,9 @@ const PrivateRoutes = ({ children }) => {
     const { user, loading } = useContext(AuthContext);
 
     if(loading){
-        return <span className="loading loading-spinner loading-lg h-screen mx-auto"></span>
+        return <div className="flex w-screen h-screen justify-center">
+            <span className="loading loading-spinner text-secondary"></span>
+        </div>; 
     }
 
     if (user) {
@@ -20,3 +24,6 @@ const PrivateRoutes = ({ children }) => {
 };
 
 export default PrivateRoutes;
+PrivateRoutes.propTypes = {
+    children: PropTypes.node,
+}

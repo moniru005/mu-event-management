@@ -25,7 +25,7 @@ const Footer = () => {
                 </div>
             </nav>
             <aside className='text-white'>
-                <p>Copyright © 2023 - All right reserved by MU EVENT Ltd</p>
+                <p>Copyright © 2023 - All right reserved by MU~EVENT Ltd</p>
             </aside>
         </footer>
     );

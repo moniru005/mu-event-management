@@ -50,10 +50,12 @@ const Register = () => {
                     console.log(result.user);
                     e.target.reset();
                     Swal.fire({
-                        title: 'Success',
-                        text: 'User Successfully Created',
+                        position: 'center',
                         icon: 'success',
-                    })
+                        title: 'User Successfully Created',
+                        showConfirmButton: false,
+                        timer: 1500
+                      })
 
                     navigate('/');
                    

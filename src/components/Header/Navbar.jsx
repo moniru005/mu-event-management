@@ -6,18 +6,21 @@ import Swal from 'sweetalert2';
 
 const Navbar = () => {
     const { user, userSignOut } = useContext(AuthContext);
-    // console.log(user)
+    console.log(user)
 
     const navigate = useNavigate();
 
     const handleLogOut = () => {
         userSignOut()
             .then(() => {
-                Swal.fire(
-                    'You are Logged Out.!',
-                    '',
-                    'success'
-                )
+                Swal.fire({
+                    position: 'center',
+                    icon: 'success',
+                    title: 'Logged out Successfully',
+                    showConfirmButton: false,
+                    timer: 1500
+                })
+
                 navigate('/login')
             })
             .catch(error => {
@@ -32,8 +35,8 @@ const Navbar = () => {
         <div className="flex lg:flex-row md:flex-col flex-col gap-2 font-semibold font-workSans">
             <li> <NavLink to="/">Home</NavLink> </li>
             <li> <NavLink to="/about">About</NavLink> </li>
-            <li> <NavLink to="/contact">Contact</NavLink> </li>
             <li> <NavLink to="/services">Services</NavLink> </li>
+            <li> <NavLink to="/contact">Contact</NavLink> </li>
             {/* <li> <NavLink to="/login">Login</NavLink> </li> */}
             {/* <li> <NavLink to="/register">Register</NavLink> </li> */}
         </div>
@@ -51,7 +54,9 @@ const Navbar = () => {
                 </div>
                 <div className="flex">
                     <img className="w-24 relative" src="https://i.ibb.co/qnnz188/logo.png" alt="" />
-                    <p className="pt-7 text-2xl uppercase font-bold text-slate-900 absolute lg:top-2.5 lg:left-[145px] top-2.5 left-[150px] font-workSans">Muevent</p>
+                    <p className="pt-7 text-2xl uppercase font-bold text-slate-900 absolute lg:top-2.5 lg:left-[145px] top-2.5 left-[150px] font-workSans bg-gradient-to-r from-slate-900  to-teal-700 inline-block text-transparent bg-clip-text ">
+                        Mu~event
+                    </p>
                 </div>
             </div>
             <div className="navbar-center hidden lg:flex">
@@ -61,11 +66,18 @@ const Navbar = () => {
             </div>
             <div className="navbar-end">
                 <div className="flex items-center gap-2">
-                    <p className="lg:flex hidden">{user?.email}</p>
+                    <p className="lg:flex hidden font-medium">{user?.displayName}</p>
 
                     {
                         user ?
-                            <button onClick={handleLogOut} className="btn bg-slate-800 text-white hover:bg-slate-700 font-workSans">Logout</button>
+                            <div className="flex justify-center items-center">
+                                <button onClick={handleLogOut} className="btn bg-slate-800 text-white hover:bg-slate-700 font-workSans">Logout</button>
+                                <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+                                    <div className="w-10 rounded-full">
+                                        <img src={user?.photoURL} />
+                                    </div>
+                                </label>
+                            </div>
                             :
                             <Link to="/login">
                                 <button className="btn bg-slate-800 text-white hover:bg-slate-700 font-workSans">Login</button>

@@ -22,10 +22,12 @@ const Login = () => {
                 console.log(result.user)
                 if(result.user.email || result.user.email){
                     Swal.fire({
-                        title: 'You are Logged in!',
-                        text: '',
+                        position: 'center',
                         icon: 'success',
-                    })
+                        title: 'Logged in Successfully',
+                        showConfirmButton: false,
+                        timer: 1500
+                      })
                 }
                               
                   navigate(location?.state ? location.state : '/');
