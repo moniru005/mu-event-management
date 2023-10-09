@@ -6,7 +6,7 @@ const ServiceCard = ({ event }) => {
     // console.log(event)
 
     return (
-        <div className=" mx-auto  relative flex max-w-[24rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-md">
+        <div className=" mx-auto relative flex max-w-[24rem] flex-col rounded-xl bg-white bg-clip-border text-gray-700 shadow-lg">
             <div className="relative m-0 overflow-hidden rounded-none bg-transparent bg-clip-border text-gray-700 shadow-none">
                 <img
                     src={image}
@@ -28,7 +28,7 @@ const ServiceCard = ({ event }) => {
 
             <div className='border-gray-200 border-t h-16 flex justify-between items-center py-10 px-6'>
                 <div className=''>
-                    <Link to={`/services/${id}`}>
+                    <Link to={`/event/${id}`}>
                         <button className='btn bg-slate-800 hover:bg-slate-700 text-white'>Details</button>
                     </Link>
                 </div>

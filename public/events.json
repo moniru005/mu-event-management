@@ -17,7 +17,7 @@
         "event_about": "About the Event: Join us for an immersive experience in the world of machine learning. Our expert instructors will guide you through the journey of understanding and applying machine learning concepts in real-world scenarios. By the end of the workshop, you'll be equipped with the skills to tackle machine learning projects with confidence.",
         "event_content": "Content: We'll cover topics such as data preprocessing, model evaluation, and hands-on coding with Python.",
         "event_speaker": "John Doe",
-        "event_speaker_photo": "john_doe.jpg"
+        "event_speaker_photo": "https://i.ibb.co/FgGKj9k/john-doe.jpg"
     },
     {
         "id": 2,
@@ -37,7 +37,7 @@
         "event_about": "About the Event: Join us for an action-packed week of coding and web development. Our instructors are industry professionals with a passion for teaching, and they'll ensure you gain the skills necessary to build stunning websites and web applications. Whether you're a beginner or looking to level up your skills, this bootcamp is your gateway to success.",
         "event_content": "Content: Hands-on coding, real-world projects, and expert guidance from experienced developers.",
         "event_speaker": "Jane Smith",
-        "event_speaker_photo": "jane_smith.jpg"
+        "event_speaker_photo": "https://i.ibb.co/3cmZ1GJ/jane-smith.jpg"
     },
     {
         "id": 3,
@@ -57,7 +57,7 @@
         "event_about": "About the Event: Join us for a transformative journey into the world of project management. Our experienced instructors will guide you through the essential concepts and tools used by successful project managers. By the end of the course, you'll have the knowledge and certification to excel in project management roles.",
         "event_content": "Event Content: \n1. Project Management Fundamentals\n2. Project Initiation and Planning\n3. Project Execution and Control\n4. Project Closing and Evaluation\n5. Risk Management and Quality Assurance\n6. Stakeholder Communication\n7. Leadership and Team Management\n8. Case Studies and Practical Scenarios\n9. Certification Exam Preparation\n10. Mock Exams and Assessments",
         "event_speaker": "David Johnson",
-        "event_speaker_photo": "david_johnson.jpg"
+        "event_speaker_photo": "https://i.ibb.co/KzKTtCt/david-johnson.jpg"
     },
     {
         "id": 4,
@@ -77,7 +77,7 @@
         "event_about": "About the Event: Join us for an immersive experience in the dynamic field of digital marketing. Our goal is to empower you with the knowledge and skills to excel in the digital marketing landscape. Whether you're a business owner, marketer, or aspiring digital strategist, this workshop will equip you with the tools to achieve marketing success.",
         "event_content": "Content: Practical exercises, case studies, and expert insights.",
         "event_speaker": "Emily Davis",
-        "event_speaker_photo": "emily_davis.jpg"
+        "event_speaker_photo": "https://i.ibb.co/HYkfgBy/emily-davis.jpg"
     },
     {
         "id": 5,
@@ -97,7 +97,7 @@
         "event_about": "About the Event: Our Leadership Training Seminar is dedicated to cultivating confident and impactful leaders. We believe that leadership is a journey of continuous growth, and this seminar will provide you with the tools, knowledge, and inspiration to excel in your leadership roles.",
         "event_content": "Content: Role-playing exercises, group discussions, and leadership case studies.",
         "event_speaker": "Mark Roberts",
-        "event_speaker_photo": "mark_roberts.jpg"
+        "event_speaker_photo": "https://i.ibb.co/3kB40dF/mark-roberts.jpg"
     },
     {
         "id": 6,
@@ -117,7 +117,7 @@
         "event_about": "About the Event: Join us to unlock the potential of data science and gain a competitive edge in the field. Our mission is to empower individuals with the expertise needed to tackle complex data challenges and drive innovation through data-driven decision-making.",
         "event_content": "Content: Hands-on data analysis, real-world datasets, and expert insights.",
         "event_speaker": "Sarah Johnson",
-        "event_speaker_photo": "sarah_johnson.jpg"
+        "event_speaker_photo": "https://i.ibb.co/b3vtp8S/sarah-johnson.jpg"
     },
     {
         "id": 7,
@@ -137,7 +137,7 @@
         "event_about": "About the Event: Join us to unleash your creative potential through the written word. Our workshop is a celebration of imagination and self-expression, where you'll connect with fellow writers and find your unique voice.",
         "event_content": "Content: Writing exercises, peer feedback, and author guest speakers.",
         "event_speaker": "Alice Turner",
-        "event_speaker_photo": "alice_turner.jpg"
+        "event_speaker_photo": "https://i.ibb.co/74XTCC1/alice-turner.jpg"
     },
     {
         "id": 8,
@@ -157,7 +157,7 @@
         "event_about": "About the Event: Join us for an artistic exploration of photography. Our mission is to empower photographers of all levels to express their vision and tell compelling visual stories. Discover the beauty of photography and unlock your creative potential.",
         "event_content": "Content: Practical photo sessions, image editing, and expert photography tips.",
         "event_speaker": "Michael Adams",
-        "event_speaker_photo": "michael_adams.jpg"
+        "event_speaker_photo": "https://i.ibb.co/qJzv9H4/michael-adams.jpg"
     },
     {
         "id": 9,
@@ -177,7 +177,7 @@
         "event_about": "About the Event: Join us to become a confident multilingual communicator. Our language intensive is a celebration of cultural diversity and language learning. Connect with fellow language enthusiasts and broaden your horizons through language exploration.",
         "event_content": "Content: Interactive language sessions, cultural immersion, and language games.",
         "event_speaker": "Maria Rodriguez",
-        "event_speaker_photo": "maria_rodriguez.jpg"
+        "event_speaker_photo": "https://i.ibb.co/jRp2FCv/maria-rodriguez.jpg"
     },
     {
         "id": 10,
@@ -197,7 +197,7 @@
         "event_about": "About the Event: Join us to become a cybersecurity defender. Our expert trainers will equip you with the knowledge and tools to safeguard against cyber threats. By the end of the course, you'll be prepared to tackle cybersecurity challenges and protect digital assets.",
         "event_content": "Event Content: \n1. Introduction to Cybersecurity\n2. Network Security and Protocols\n3. Ethical Hacking and Penetration Testing\n4. Threat Detection and Incident Response\n5. Cryptography and Data Protection\n6. Security Policies and Compliance\n7. Cybersecurity Tools and Techniques\n8. Practical Cybersecurity Projects\n9. Cybersecurity Certification Prep\n10. Hands-on Cybersecurity Labs",
         "event_speaker": "Lisa Brown",
-        "event_speaker_photo": "lisa_brown.jpg"
+        "event_speaker_photo": "https://i.ibb.co/S3hKpJV/lisa-brown.jpg"
     },
     {
         "id": 11,
@@ -217,7 +217,7 @@
         "event_about": "About the Event: Join us to explore the limitless possibilities of digital art and design. Our experienced instructors will guide you through the creative process and help you unlock your artistic potential. By the end of the workshop, you'll be able to create digital masterpieces.",
         "event_content": "Event Content: \n1. Digital Art Fundamentals\n2. Digital Painting Techniques\n3. Graphic Design with Adobe Creative Suite\n4. 3D Modeling and Animation\n5. Digital Art Software and Tools\n6. Portfolio Development\n7. Creative Collaboration\n8. Artistic Expression and Storytelling\n9. Showcase and Exhibition\n10. Artistic Feedback and Critique",
         "event_speaker": "Alexandra White",
-        "event_speaker_photo": "alexandra_white.jpg"
+        "event_speaker_photo": "https://i.ibb.co/60smdSR/alexandra-white.jpg.jpg"
     },
     {
         "id": 12,
@@ -237,7 +237,7 @@
         "event_about": "About the Event: Join us to unlock the secrets of digital entrepreneurship. Our mission is to empower individuals with the tools and strategies needed to succeed in the ever-evolving world of online business. Connect with industry leaders, gain actionable insights, and take your entrepreneurial journey to new heights.",
         "event_content": "Content: Workshops, success stories, and networking opportunities with entrepreneurs.",
         "event_speaker": "Daniel Green",
-        "event_speaker_photo": "daniel_green.jpg"
+        "event_speaker_photo": "https://i.ibb.co/RhjQFVb/daniel-green.jpg"
     },
     {
         "id": 13,
@@ -257,7 +257,7 @@
         "event_about": "About the Event: Join us in our mission to protect and preserve the environment. Our workshop is a platform for individuals passionate about environmental conservation. Together, we can create a more sustainable and eco-friendly future for generations to come.",
         "event_content": "Content: Workshops, eco-friendly initiatives, and discussions with environmentalists.",
         "event_speaker": "Olivia Adams",
-        "event_speaker_photo": "olivia_adams.jpg"
+        "event_speaker_photo": "https://i.ibb.co/P5KXKnQ/olivia-adams.jpg"
     },
     {
         "id": 14,
@@ -277,7 +277,7 @@
         "event_about": "About the Event: Join us to become a confident and persuasive speaker. Public speaking is an essential skill for personal and professional success. Our workshop is designed to help you conquer your fear of public speaking and develop the confidence and eloquence needed to engage and inspire any audience.",
         "event_content": "Content: Speech delivery practice, group presentations, and expert coaching.",
         "event_speaker": "James Wilson",
-        "event_speaker_photo": "james_wilson.jpg"
+        "event_speaker_photo": "https://i.ibb.co/W5HYKh4/james-wilson.jpg"
     },
     {
         "title": "Advanced Python Programming",
@@ -296,7 +296,7 @@
         "event_about": "About the Event: Join us to unlock the full potential of Python programming. Our experienced instructors will guide you through challenging Python concepts and practical applications. By the end of the course, you'll be a proficient Python developer ready to tackle complex projects.",
         "event_content": "Event Content: \n1. Advanced Python Syntax and Features\n2. Object-Oriented Programming in Python\n3. Data Structures and Algorithms\n4. Web Development with Django\n5. Data Analysis with Pandas\n6. GUI Development with Tkinter\n7. Python Testing and Debugging\n8. Real-World Python Projects\n9. Code Optimization and Best Practices\n10. Final Project Presentation",
         "event_speaker": "Sophia Roberts",
-        "event_speaker_photo": "sophia_roberts.jpg"
+        "event_speaker_photo": "https://i.ibb.co/NZ41v9k/sophia-roberts.jpg"
     },
     {
         "id": 16,
@@ -316,6 +316,6 @@
         "event_about": "About the Event: Join us to explore the cutting-edge realms of robotics and artificial intelligence. Our workshop is a gateway to the future, where you'll discover the limitless possibilities of technology and innovation. Unleash your inner innovator and be part of the digital revolution.",
         "event_content": "Content: Robot assembly, programming, AI demos, and expert tech talks.",
         "event_speaker": "Andrew Johnson",
-        "event_speaker_photo": "andrew_johnson.jpg"
+        "event_speaker_photo": "https://i.ibb.co/6nKN99N/andrew-johnson.jpg"
     }
 ]

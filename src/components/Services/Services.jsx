@@ -23,12 +23,12 @@ const Services = () => {
                 {showAll ?
                     events?.map(event => <ServiceCard key={event.id} event={event}> </ServiceCard>) :
 
-                    events?.slice(0, 8).map(event => <ServiceCard key={event.id} event={event}> </ServiceCard>)
+                    events?.slice(0, 4).map(event => <ServiceCard key={event.id} event={event}> </ServiceCard>)
                 }
             </div>
-            <div className="mt-10">
-                <button onClick={() => setShowAll(!showAll)} className="btn mx-auto flex">
-                    Show All
+            <div className="mt-10 lg:mb-16">
+                <button onClick={() => setShowAll(!showAll)} className="btn bg-[#fb544e] text-white mx-auto flex">
+                    {!showAll ? 'Show All' : 'Less'}
                 </button>
             </div>
         </>

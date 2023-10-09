@@ -1,13 +1,17 @@
+import About from "../components/About/About";
 import Navbar from "../components/Header/Navbar";
 
-const About = () => {
+const AboutPage = () => {
     return (
         <div>
             <div className="lg:px-12">
                 <Navbar></Navbar>
             </div>
+            <div>
+                <About></About>
+            </div>
         </div>
     );
 };
 
-export default About;
+export default AboutPage;

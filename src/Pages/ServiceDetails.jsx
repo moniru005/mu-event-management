@@ -1,23 +1,19 @@
-import { useParams, useRouteLoaderData } from "react-router-dom";
+
+import { useLoaderData, useParams } from "react-router-dom";
 import Navbar from "../components/Header/Navbar";
-import { useEffect, useState } from "react";
+
 import ServiceDetailsCard from "./ServiceDetailsCard";
 
 const ServiceDetails = () => {
 
-    const [event, setEvent] = useState();
-    console.log(event)
-
-    const services = useRouteLoaderData();
-    console.log(services)
+    const events = useLoaderData();
     const {id} = useParams();
 
-    useEffect(() => {
-        console.log(services)
-        const findEvent = services?.find(event => event.id === id)
-        setEvent(findEvent);
+    const idInt = parseInt(id)
+    const event = events?.find(event => event.id === idInt);
+    console.log(event);
+
     
-    }, [id, services])
 
     
 
@@ -26,7 +22,7 @@ const ServiceDetails = () => {
             <div className="lg:px-12">
                 <Navbar></Navbar>
             </div>
-            <div>
+            <div className="bg-gray-100">
                 <ServiceDetailsCard event={event}></ServiceDetailsCard>
             </div>
         </>

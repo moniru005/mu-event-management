@@ -10,7 +10,7 @@ const Banner = () => {
                 <img className="relative lg:min-h-screen z-0" src="https://i.ibb.co/dG2qxXW/wepik-export-2023.png" alt="" />
             </div>
             {/* Overlay Background */}
-            <div className=" z-10 bg-gradient-to-r from-orange-500 to-blue-500 md:h-[380px] lg:h-[666px] h-[210px] w-[100%] md:w-[100%] lg:w-[100%] absolute top-[112px] opacity-60">
+            <div className=" z-10 bg-gradient-to-r from-orange-500 to-blue-500 md:h-[380px] lg:h-[676px] h-[210px] w-[100%] md:w-[100%] lg:w-[100%] absolute top-[112px] opacity-60">
             </div>
 
             <div className="z-20 absolute top-40 left-28 md:top-48 md:left-52 lg:top-28 lg:left-24 lg:flex flex-col lg:flex-row lg:justify-between lg:items-center lg:gap-48">
@@ -26,7 +26,7 @@ const Banner = () => {
                 </div>
 
                 {/* Bottom Shape */}
-                <div className=" z-30 absolute lg:left-10 lg:top-[565px] md:top-[230px] md:-left-52 -left-20 top-[135px]">
+                <div className=" z-30 absolute lg:left-10 lg:top-[575px] md:top-[230px] md:-left-52 -left-20 top-[135px]">
                     <img className="lg:max-w-full md:max-w-3xl max-w-sm" src="https://i.ibb.co/4RmJc1j/section-Bottom-Shape.png" alt="" />
                 </div>
             </div>

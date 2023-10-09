@@ -5,24 +5,30 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 
 import Services from "../components/Services/Services";
+import Footer from "../components/Footer/Footer";
 
 const Home = () => {
     AOS.init();
+
     return (
         <>
             
-            <div className="mb-12">
+            <div className="">
                 <div className="lg:px-12">
                     <Navbar></Navbar>
                 </div>
                 <div>
                     <Banner></Banner>
                 </div>
+                
+                <div className="z-50 mt-6 px-12" data-aos="fade-up" data-aos-duration="1000">
+                    <Services></Services>
+                </div>
                 <div className="mt-6" data-aos="fade-up" data-aos-duration="1000">
                     <Feature1></Feature1>
                 </div>
-                <div className="z-50 mt-6 px-12">
-                    <Services></Services>
+                <div>
+                    <Footer></Footer>
                 </div>
             </div>
         </>
